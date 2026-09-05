@@ -41,11 +41,16 @@
 3. Скопируй и вставь эту команду (установит менеджер пакетов pip):
 
 ```cmd
+если обычный python
+python get-pip.py
+если используешь powershell
+.\python\python.exe get-pip.py
+если использовать портативный python который включен в сборку проекта
 python\python.exe get-pip.py
 ```
 4. Дождись окончания установки.
-5. Теперь установи нужные библиотеки: (откройте коммандрую строку и вставьте комманду)
-   python.exe -m pip install PyQt6 flask requests psutil Pillow
+5. Теперь установи нужные библиотеки: (откройте командную строку и вставьте команду)
+   pip install -r requirements.txt
 
 
 ▶️ Как запустить
