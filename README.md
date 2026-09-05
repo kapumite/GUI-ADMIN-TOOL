@@ -45,7 +45,7 @@ python\python.exe get-pip.py
 ```
 4. Дождись окончания установки.
 5. Теперь установи нужные библиотеки: (откройте коммандрую строку и вставьте комманду)
-   ```python.exe -m pip install PyQt6 flask requests psutil Pillow
+   python.exe -m pip install PyQt6 flask requests psutil Pillow
 
 
 ▶️ Как запустить
