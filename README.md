@@ -29,30 +29,32 @@
 
 ---
 
-### Шаг 2. Установить библиотеки (один раз)
+```bash
+# Создание виртуального окружения
+python -m venv venv
 
-Внутри папки есть уже готовый **переносимый Python** — в папке `python\`.  
-Но для работы программы нужны дополнительные библиотеки.
+# Активация (Windows PowerShell)
+venv\Scripts\activate
 
-#### Как их установить:
+# Активация (CMD)
+venv\Scripts\activate.bat
 
-1. Открой папку с программой.
-2. Нажми правой кнопкой мыши на свободное место → выбери **"Открыть в терминале"** или **"Командная строка"**.
-3. Скопируй и вставь эту команду (установит менеджер пакетов pip):
-
-```cmd
-если обычный python
-python get-pip.py
-если используешь powershell
-.\python\python.exe get-pip.py
-если использовать портативный python который включен в сборку проекта
+#установка зависимостей
+#если портативный python из проекта
 python\python.exe get-pip.py
+python\python.exe -m pip install requirements.txt
+#если python уже установлен
+
+python -m pip install requirements.txt
+python get-pip.py
+
+# В папке проекта
+python -m venv venv
+# Активация (Windows PowerShell):
+venv\Scripts\activate
+# Активация (CMD):
+venv\Scripts\activate.bat
 ```
-4. Дождись окончания установки.
-5. Теперь установи нужные библиотеки: (откройте командную строку и вставьте команду)
-   pip install -r requirements.txt
-
-
 ▶️ Как запустить
 Учительская программа
 зайди в папку TeacherPanel
@@ -69,11 +71,7 @@ python\python.exe get-pip.py
 
     На компьютере учителя открой командную строку (Win + R → cmd → Enter).
 
-    Напиши команду:
-
-cmd
-
-ipconfig
+    Напиши команду: ipconfig
 
     Найди строчку "IPv4-адрес" — она выглядит как 192.168.1.121.
 
